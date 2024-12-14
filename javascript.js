@@ -9,4 +9,9 @@ function getComputerChoice() {
     }
 }
 
+function getHumanChoice() {
+    let answer = prompt("Choose R/P/S(write full name pls): ");
+    return "You: " + answer;
+}
 console.log(getComputerChoice())
+console.log(getHumanChoice())
