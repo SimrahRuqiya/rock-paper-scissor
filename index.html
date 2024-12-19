@@ -13,28 +13,32 @@
         <div class="choice">
             <div class="person">
                 <h3>You: </h3>
-                <button>
+                <button id="human-rockbtn">
                     <img src="images/rock.webp" height="200px">
                 </button>
-                <button>
+                <button id="human-paperbtn">
                     <img src="images/paper.avif" height="200px">
                 </button>
-                <button>
+                <button id="human-scissorbtn">
                     <img src="images/scissor.jpg" height="200px">
                 </button>
             </div>
             <br><br>
             <div class="bot">
                 <h3>Bot: </h3>
-                <button>
+                <button id="comp-rockbtn">
                     <img src="images/rock.webp" height="200px">
                 </button>
-                <button>
+                <button id="comp-paperbtn">
                     <img src="images/paper.avif" height="200px">
                 </button>
-                <button>
+                <button id="comp-scissorbtn">
                     <img src="images/scissor.jpg" height="200px">
                 </button>
+            </div>
+            <br>
+            <div id="result-message">
+                Click to play!
             </div>
         </div>
         <div class="scores">
@@ -47,8 +51,8 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>0</td>
-                        <td>0</td>
+                        <td id="playerScore">0</td>
+                        <td id="compScore">0</td>
                     </tr>
                 </tbody>
             </table>
