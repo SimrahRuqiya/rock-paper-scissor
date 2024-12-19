@@ -5,7 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="javascript.js"></script>
     <title>Rock-Paper-Scissor</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
+    <center><h1>Rock Paper Scissor</h1></center>
+    <main>
+        <div class="choice">
+            <div class="person">
+                <h3>You: </h3>
+                <button id="human-rockbtn">
+                    <img src="images/rock.webp" height="200px">
+                </button>
+                <button id="human-paperbtn">
+                    <img src="images/paper.avif" height="200px">
+                </button>
+                <button id="human-scissorbtn">
+                    <img src="images/scissor.jpg" height="200px">
+                </button>
+            </div>
+            <br><br>
+            <div class="bot">
+                <h3>Bot: </h3>
+                <button id="comp-rockbtn" disabled>
+                    <img src="images/rock.webp" height="200px">
+                </button>
+                <button id="comp-paperbtn" disabled>
+                    <img src="images/paper.avif" height="200px">
+                </button>
+                <button id="comp-scissorbtn" disabled>
+                    <img src="images/scissor.jpg" height="200px">
+                </button>
+            </div>
+            <br>
+            <div id="result-message">
+                Click to play!
+            </div>
+        </div>
+        <div class="scores">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Your Score</th>
+                        <th>Bot Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="playerScore">0</td>
+                        <td id="compScore">0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <center>
+            <p>Copyright &copy; Simrah Shabandri</p>
+        </center>
+    </footer>
 </body>
 </html>
